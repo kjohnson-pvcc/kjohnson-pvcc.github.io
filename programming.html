@@ -1,0 +1,100 @@
+<html>
+<head>
+<style>
+
+    table, th, td {
+        border-style: solid;
+        border-color: blanchedalmond;
+    }
+    a:link {color: #C64F4B;}
+    a:visited {color: bisque;}
+    tr:hover {background-color: #C7B264;}
+</style>
+</head>
+<body style="background-color: #4F6C60; color:#ffffff;">
+<table style="width: 100%; font-family: levenim mt; font-size: 110%;">
+<tr style="height: 50px; font-size: 200%;">
+    <th colspan="2">Chapter 5: Programming Algorithms & Software Testing</th>
+</tr>
+<td style="width: 100%;">    
+        <h3>Phases of Computer Program Development:</h3>
+        <ul>
+        <li>Phase 1: Understand the problem</li>
+        <li>Phase 2: Design an algorithm to solve the problem</li>
+        <li>Phase 3: Write the program code in appropriate language based on the algorithmn</li>
+        <li>Phase 4: Enter the program and save</li>
+        <li>Phase 5: Execute the program</li>
+        <li>Phase 6: Test the program, find errors and debug, then retest</li>
+        <li>Phase 7: Document and evaluate the program</li>
+        </ul>
+</td>
+<tr><td style="width: 100%;">
+        <h3>Programming Structures:</h3>
+        <ul>
+        <li>Sequential Structure: Top-down execution</li>
+        <li>Decision structures: if/then/else</li>
+        <li>Iterative (Looping):</li>
+        <dd>while loop: continue looping as long something is true</dd>
+        <dd>repeat/until loop: continue looping until something is true</dd>
+        <dd>for loop: loop a given number of times</dd>
+        <li>Recursive structures:</dd>
+        <dd>Repeat a set of instructions as a subtask of itself</li>
+        <dd>Repetition continues until:</dd>
+        <dd><span style="padding-left: 50px; display: block;">degenerative case, which is a termination condition, is met</span></dd>
+        <dd><span style="padding-left: 50px; display: block;">(degenerative case is also called a "base case")</span></dd>
+        </ul>
+</td></tr>
+<tr><td style="width: 100%;">
+    <h3>Two Classic Programming/Database Problems</h3>
+    <ul>
+    <li>Sorting: Descending order/Ascending order</li>
+    <dd>Sorting numbers</dd>
+    <dd>Sorting strings (in accordance with ASCII values)</dd>
+    <li>Searching: find specfic data that meet a certain criteria</li>
+    <dd>In database:</dd>
+    <dd><span style="padding-left: 50px; display: block;">Filters: temporary search</span></dd>
+    <dd><span style="padding-left: 50px; display: block;">Queriers: search criteria are saved so they don't have to be recreated</span></dd>
+    <li>Two Popular Search Techniques:</li>
+    <dd>Sequential search: search from top to bottom or bottom to top, one item at a time</dd>
+    <dd>Binary Search:</dd>
+    <dd><span style="padding-left: 50px; display: block;">only works if data is SORTED first</span></dd>
+    <dd><span style="padding-left: 50px; display: block;">start in the middle, then go to half of that, etc.</span></dd>
+    </ul>
+</td></tr>
+<tr><td style="width: 100%;">
+        <h3>Two Classic Program Goals:</h3>
+        <ul>
+        <li>Efficiency: Program takes minimal time and/or resources</li>
+        <li>Correctness: Program runs in expected ways and works for all expected conditions</li>
+        </ul>
+</td></tr>
+<tr><td style="width: 100%;">
+    <h3>Software Testing and Verification</h3>
+    <ul>
+    <li>Kinds of Tests:</li>
+    <dd><b><u>Acceptance Testing:</u></b> verifying whether the whole system works as intended</dd>
+    <dd><b><u>Integration Testing:</u></b> ensuring that software componets or functions operate together</dd>
+    <dd><b><u>Unit Testing:</u></b> validating that each software unit performs as expected. A unit is the smallest testable component of an application.</dd>
+    <dd><b><u>Functional Testing:</u></b> checking fuctions by emulating business scenarios, based on fuctional requirements. Black-box testing is a common way to verify functions.</dd>
+    <dd><b><u>Performance Testing:</u></b> testing how the software performs under different workloads. Load testing, for example, is used to evluate performance under real-life load conditions.</dd>
+    <dd><b><u>Regression Testing:</u></b> checking whether new features break or degrade functionality. Sanity testing can be used to verify menus, functions and commands at the surface level, when there is no time for a full regression test.</dd>
+    <dd><b><u>Stress Testing:</u></b> testing how much strain the system can take before it fails. Connsidered to be a type of non-fuctional testing.</dd>
+    <dd><b><u>Usability Testing:</u></b> validating how well a customer can use a system or web application to complete a task</dd>
+    <li>Software Testing is done to detect:</li>
+    <dd>Architectural flaws</dd>
+    <dd>Poor design decisions</dd>
+    <dd>Invalid or incorrect functionality</dd>
+    <dd>Security vulnerabilities</dd>
+    <dd>Scalability issues</dd>
+    <li>Testing best practices:</li>
+    <dd><b><u>Continous testing:</u></b> software testing that relies on test automation that is intergrated with the deployment process</dd>
+    <dd><b><u>Configuration management:</u></b> organizations centarlly maintain test assets and track what software builds to test</dd>
+    <dd><b><u>Service virtualization:</u></b> simulates the services and systems that are missing or not yet completed, enabling teams to reduce dependencies and test sooner</dd>
+    <dd><b><u>Defect or "bug tracking":</u></b> allows teams to track defects, measure their scope and impact, and uncover related issues</dd>
+    <dd><b><u>Metrics and reporting:</u></b> reporting and analytics enable team members to share status, goals, and test results.</dd>
+    </ul>
+
+</table>
+<a href="https://www.ibm.com/topics/software-testing">From: IBM What is software Testing?</a>
+</body>
+</html>
