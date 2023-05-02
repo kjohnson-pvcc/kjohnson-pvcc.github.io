@@ -14,6 +14,8 @@ def main():
     read_data_file()
     calculate_grades()
     create_report_file()
+    gradestotal = (">= 90", ">= 80", ">= 70", ">= 60")
+    average = ("2", "3", "4")
 
 def read_data_file():
     datafile = open(student_file, "r") # The "r" indicates this is a READ file
@@ -25,7 +27,7 @@ def read_data_file():
 def calculate_grades():
     global average, totA, totB, totC, totD, totF
     totA = totB = totC = totD = totF = 0
-    gradestotal = len(stu)
+    gradestotal = (">= 90", ">= 80", ">= 70", ">= 60")
     
     for i in range(len(stu)):
         hw = int(stu[i][2]) # Last name is pos. 0, first name is pos. 1, so homework is pos. 2
@@ -54,15 +56,15 @@ def calculate_grades():
             totF += 1
         stu[i].append(lettergrade)
 
-    average = gradestotal / len(stu)
+        average = gradestotal / len(stu)
 
 def create_report_file():
     line = "\n***************************************************"
     repfile = open(out_file,"w")
     repfile.write("\n****************** CSC 230 Grade Report *******************")
     repfile.write("\nReport Date/Time        : " + str(datetime.datetime.now()))
-    repfile.write("\nTotal number of students: " + str(len(stu())))
-    repfile.write("\nAverage student grade   : " + str(format(average, '5,.2f')))
+    repfile.write("\nTotal number of students: " + str(len(stu)))
+    repfile.write("\nAverage student grade   : " + str(format(average), '5,.2f'))
     repfile.write("\nTotal number of A grades: " + str(totA))
     repfile.write("\nTotal number of B grades: " + str(totB))
     repfile.write("\nTotal number of C grades: " + str(totC))
